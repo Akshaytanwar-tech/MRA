@@ -1,0 +1,1979 @@
+/* Header section start */
+
+.header {
+    background: rgba(23, 42, 85);
+    padding: 28px 0px;
+    width: 100%;
+}
+
+.header-in {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+
+}
+
+.header-in-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.he-in-top-left {
+    display: flex;
+    gap: 27px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+
+.he-top-left-item {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.he-top-left-item-2 {}
+
+.he-in-top-mid {}
+
+.he-in-top-mid-logo {
+    width: 162px;
+    max-width: 100%;
+    height: auto;
+}
+
+.he-in-top-mid-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.he-in-top-right {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.he-in-top-right a {
+    line-height: 100%;
+    letter-spacing: 2px;
+    padding: 9px 20px
+}
+
+.header-in-bottom {}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.nav-link {
+    line-height: 100%;
+}
+
+.nav-link a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 1)
+}
+
+
+/* search button */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.search-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease-out;
+}
+
+.search-popup.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.search-popup input {
+    padding: 12px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-popup input:focus {
+    border-color: #0056b3;
+}
+
+.search-popup button {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-popup button:hover {
+    background-color: #218838;
+}
+
+.search-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Hamburger section */
+.hamburger {
+    display: none;
+}
+
+.hamburger-button {}
+
+.hamburger-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+/* Hamburger animation start*/
+
+.hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+/* Hamburger animation end*/
+.hamburger-in {
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding: 80px 0px;
+    background-color: rgba(23, 42, 85, 1);
+    position: absolute;
+    top: 102px;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hamburger-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hamburger-nav-links a {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.hamburger-nav-links a:hover {
+    background-color: #5D5D5D;
+}
+
+.nav-link-sm {}
+
+.nav-sm-button {
+    padding-top: 40px;
+    text-align: center;
+
+}
+
+.nav-sm-button a {
+    padding: 10px 20px;
+    transition: none;
+}
+
+/* Header section end */
+
+/* Banner section start */
+
+.banner {
+    position: relative;
+    background-color: #172A55;
+    background-image: url("../img/banner-back-lining.png");
+}
+
+.banner-in {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.banner-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%;
+}
+
+.banner-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.banner-text {
+    padding: 52px 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+}
+
+.banner-text h1 {
+    font-family: "Teodor TRIAL";
+    font-weight: 350;
+    font-size: 87.24px;
+    line-height: 80%;
+    letter-spacing: 0.32px;
+}
+
+.banner-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.banner-text a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    padding: 9px 20px;
+    width: fit-content;
+}
+
+.ban-text-top {
+    color: rgba(255, 255, 255, 1);
+}
+
+.ban-text-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 42ch;
+}
+
+.ban-text-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Banner section end */
+
+
+/* Feature section start */
+.Feature-1 {
+    background-color: #F1E8D6;
+}
+
+.feature-1-in {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 50px;
+    padding-bottom: 64px;
+}
+
+.feature-1-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.feature-1-top h2 {
+    font-family: "Teodor TRIAL";
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: 0.16px;
+    text-align: center;
+
+}
+
+.feature-1-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 72ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature-1-middle p {
+    color: #5D5D5D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.feature-1-bottom {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+
+.feature-1-img {
+    aspect-ratio: 206/86;
+}
+
+.feature-1-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Excellence_Guaranteed {
+    font-family: "beyond";
+    color: #CC922F;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+
+
+/* Feature section end */
+
+/* history section start */
+
+.history {
+    position: relative;
+    background-color: rgba(240, 236, 228);
+    background-image: url('/assets/img/history-back-lining.png');
+}
+
+.history-in {
+    display: flex;
+    justify-content: left;
+    padding: 102px 0px;
+}
+
+.history-text {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.hi-text-top {}
+
+.hi-text-top h2 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 100%;
+    letter-spacing: 0.64px;
+    color: #1A1A1A;
+    max-width: 17ch;
+}
+
+.hi-text-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hi-text-middle p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: rgba(93, 93, 93, 1);
+    max-width: 46ch;
+}
+
+.hi-te-mi-top {}
+
+.hi-te-mi-middle {}
+
+.hi-te-mi-bottom {}
+
+.hi-text-bottom {}
+
+.hi-text-bottom a {
+    padding: 14px 38px;
+    line-height: 150%;
+    letter-spacing: 3px;
+}
+
+.history-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.history-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.his-img-sm {
+    position: absolute;
+    top: 40%;
+    left: -48px;
+    width: 234px;
+    height: auto;
+}
+
+/* history section end */
+
+/* explore section start */
+
+.explore {
+    background-color: #F0ECE4;
+}
+
+.explore-in {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 15px;
+}
+
+.explore-in h2 {}
+
+.explore-in p {}
+
+.explore-top {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ex-top-top {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.ex-top-top p {
+    font-family: "beyond";
+    color: #CC922F;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+
+}
+
+.ex-top-top h2 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
+}
+
+.ex-top-bottom p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+}
+
+.explore-top-bottom {}
+
+.explore-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+
+.explore-img {
+    aspect-ratio: 1/1;
+}
+
+.explore-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.explore-img-text {
+    position: absolute;
+    top: 0;
+    /* Start below the avail-card */
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    /* Ensure the text section covers the avail-card's height */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Semi-transparent background */
+    color: #fff;
+    /* Allow scrolling for long text */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.explore-img-text-in {
+    position: relative;
+    top: 160px;
+    transition: top 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.explore-img-text-in p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: rgba(245, 245, 245, 1);
+}
+
+.explore-img-text-in h3 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.16px;
+    text-transform: capitalize;
+}
+
+.explore-img-text-in a {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 11.17px;
+    line-height: 100%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.explore-card:hover .explore-img-text-in {
+    top: 0;
+    /* Move text upwards completely */
+}
+
+/* explore section end */
+
+
+/* avail item section start */
+
+.avail-item {
+    background-color: #041948;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.avail-item-in {
+
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    color: #FFFFFF;
+}
+
+.avail-item-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.avail-item-top-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.avl-itm-top-top p {
+    font-family: "beyond";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(208, 222, 255, 1);
+}
+
+.avl-itm-top-top h2 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 100%;
+    letter-spacing: -4%;
+
+}
+
+.avl-itm-top-bottom p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: rgba(245, 245, 245, 1);
+    max-width: 60ch;
+}
+
+.avail-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.avail-item-bottom-img {
+    aspect-ratio: 1/1;
+}
+
+.avail-item-bottom-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.avail-card {
+    position: relative;
+    overflow: hidden;
+    /* Initially hide overflowing content */
+    cursor: pointer;
+}
+
+
+/* Text section */
+.avail-text-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+.avail-text-section-text {
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.avail-text-section-text h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.16px;
+    text-transform: capitalize;
+}
+
+.avail-text-section-text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+/* Hover effect to move text upwards */
+.avail-card:hover .avail-text-section-text {
+    top: 0;
+    /* Move text upwards completely */
+}
+
+/* Optional scrollbar styling */
+/* .avail-text-section::-webkit-scrollbar {
+    width: 6px;
+} */
+
+/* .avail-text-section::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+} */
+
+/* avail item section end */
+
+
+/* Our commercial section start */
+.our-commercial {
+    position: relative;
+}
+
+.our-com-in {
+    display: flex;
+    justify-content: right;
+}
+
+.our-com-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52%;
+    height: 100%;
+}
+
+.our-com-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-com-text {
+    padding: 150px 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our-com-text-bottom a {
+    padding: 14px 40px 12px 52px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.our-com-text-top h2 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 105%;
+    letter-spacing: -0.16px;
+    text-transform: capitalize;
+    color: #1A1A1A;
+}
+
+.our-com-text-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.our-com-text-middle p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    max-width: 45ch;
+    color: #5D5D5D;
+}
+
+/* Our commercial section end */
+
+
+/* Map section start */
+
+.map {
+    background: #F1E8D6;
+    position: relative;
+}
+
+.map-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 0px;
+}
+
+.map-top-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.map-top-right h2 {
+    max-width: 16ch;
+    color: rgba(26, 26, 26, 1);
+    letter-spacing: -0.16px;
+}
+
+.map-top-left {
+    max-width: 43ch;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.map-top-left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.map-top-left-top p {
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #5D5D5D;
+}
+
+.map-top-left-bottom {}
+
+.map-top-left-bottom a {
+    padding: 9px 20px;
+}
+
+.map-bottom {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 314px; */
+}
+
+.map-bottom img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Map section end */
+
+/* Science behind section start */
+
+.Science-behind {
+    position: relative;
+    background: rgba(240, 236, 228, 1);
+    background-image: url('/assets/img/feedback-bg-image.png');
+}
+
+.science-behind-in {
+    display: flex;
+}
+
+.sc-be-text {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 124px 0;
+}
+
+.sc-be-text-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sc-be-text-top h2 {
+    font-size: 42px;
+    margin-bottom: 100px;
+}
+
+.sc-be-text-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sc-be-text-middle p {
+    color: rgba(93, 93, 93, 1);
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.sc-be-text-bottom {}
+
+.sc-be-text-bottom a {
+    padding: 14px 31px;
+}
+
+.sc-be-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 53%;
+}
+
+.sc-be-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Science behind section end */
+
+
+/* Feedback section start */
+
+.feedback {
+    position: relative;
+    background-color: rgba(46, 59, 87);
+}
+
+.feedback-in {}
+
+.feedback-content {
+    display: flex;
+    gap: 50px;
+    color: rgba(255, 255, 255, 1);
+    padding: 114px 0px;
+}
+
+.feedback-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    gap: 92px;
+    width: 70%;
+}
+
+.feed-text-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feed-text-top p {
+    color: rgba(208, 222, 255, 1);
+}
+
+.feed-text-top h2 {
+
+    line-height: 120%;
+    letter-spacing: -0.16px;
+    text-transform: capitalize;
+
+}
+
+.feed-text-middle {
+    padding-top: 10px;
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    color: rgba(240, 236, 228, 1);
+}
+
+.feed-text-bottom {}
+
+.feed-arrows {
+    position: absolute;
+    bottom: 146px;
+    left: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.left-arrow {
+    background: #CC922F;
+    border-radius: 0px;
+}
+
+.right-arrow {
+    background: #CC922F;
+    border-radius: 0px;
+}
+
+.feed-text-bottom h4 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(240, 236, 228, 1)
+}
+
+.feed-text-bottom p {
+    color: rgba(240, 236, 228, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+}
+
+.feedback-image {
+    margin-top: 28px;
+
+}
+
+.feedback-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Feedback section end */
+
+
+/* tips and trick section start */
+.tips-tricks {
+    background-color: rgba(240, 236, 228);
+}
+
+.tips-tricks-in {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.ti-tr-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ti-tr-head p {
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.ti-tr-head h2 {
+    line-height: 120%;
+    letter-spacing: -0.16px;
+}
+
+.ti-tr-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ti-tr-content p {
+    color: rgba(93, 93, 93, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+
+}
+
+
+
+.tt-card {
+    display: flex;
+    gap: 22px;
+}
+
+.tt-card-in {
+    position: relative;
+    flex: 1;
+
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out;
+}
+
+.tt-card-image {
+    aspect-ratio: 1 / 2;
+    height: 669px;
+    width: 100%;
+}
+
+.tt-card-in img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.tt-text-content {
+    position: absolute;
+    padding: 0px 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: flex-end;
+    bottom: 0;
+    /* transition: top 0.3s ease-in-out; */
+}
+
+.tt-card-in:hover .tt-text-content {}
+
+.tt-card-in.large {
+    flex: 2;
+}
+
+.tt-card-in.large .tt-text-content {}
+
+.tt-card-in:hover {
+    flex: 2;
+}
+
+.tt-card-in:hover .tt-text-content {}
+
+.tt-card:hover .tt-card-in:not(:hover) {
+    flex: 1;
+}
+
+.tt-card:hover .tt-card-in:not(:hover) .tt-text-content {}
+
+.tt-text-content h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-size: 26.1px;
+    line-height: 100%;
+    letter-spacing: 0.64px;
+    text-transform: capitalize;
+
+}
+
+.tt-text-content p {
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 140%;
+    letter-spacing: 0px;
+
+}
+
+.tt-text-content a {
+    padding: 8px 40px;
+    margin-top: 10px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 500;
+    font-size: 12.15px;
+    line-height: 100%;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+#tt-slider {
+    display: none;
+}
+
+/* tips and trick section end */
+
+/* feature section start */
+
+.features {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.features-img {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    /* width: 55%; */
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+}
+
+/* .fe-img{
+    aspect-ratio: 3/1;
+} */
+
+.fe-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fe-img-features-card {
+    position: absolute;
+    bottom: 35px;
+    /* width: 100%; */
+    display: flex;
+    left: -450px;
+    gap: 20px;
+}
+
+.features-in {}
+
+.features-text {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-top: 30px;
+}
+
+.features-text-top {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.features-text-top-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.features-text-top-head p {}
+
+.features-text-top-head h2 {
+    max-width: 15ch;
+}
+
+.features-text-top-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.features-text-top-bot p {
+    max-width: 52ch;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    color: rgba(93, 93, 93, 1);
+}
+
+.features-text-bottom {}
+
+.features-text-bottom a {
+    padding: 14px 22px 13px 27px;
+    font-weight: 500;
+    font-size: 12px;
+
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+/* feature section end */
+
+
+/* resources section start */
+
+.resources {}
+
+.resources-in {
+    display: flex;
+    padding-top: 78px;
+    column-gap: 20px;
+}
+
+.resources-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 142px; */
+}
+
+.resources-left h3 {
+    font-family: "Teodor TRIAL";
+    font-weight: 400;
+    font-size: 133.85px;
+
+    line-height: 91%;
+    letter-spacing: -0.16px;
+    text-transform: capitalize;
+
+}
+
+.resources-left div {
+    color: rgba(204, 146, 47, 1);
+}
+
+.resources-img {
+    display: flex;
+    gap: 10px;
+}
+
+.resources-img img {}
+
+.resources-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.re-ri-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 22px;
+}
+
+.re-ri-content p {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: rgba(93, 93, 93, 1);
+}
+
+.re-ri-con-button {}
+
+.re-ri-con-button a {
+    padding: 9px 20px;
+}
+
+.re-ri-img {
+    aspect-ratio: 2 / 1;
+    position: relative;
+}
+
+.re-ri-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.resources-img-mob {
+    position: absolute;
+    top: -60px;
+    right: 26px;
+    display: none;
+    gap: 10px;
+}
+
+.re-img-mob-in {
+    aspect-ratio: 1/1;
+}
+
+.re-img-mob-in img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* resources section end */
+
+
+/* Footer section start */
+
+.footer {
+    background-color: rgba(23, 42, 85, 1);
+    background-image: url(/assets/img/Group\ 427321189.png);
+}
+
+.footer-in {}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-top: 53px;
+    padding-bottom: 25px;
+    color: white;
+    align-items: center;
+}
+
+.fot-right-side {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.fot-right-side {}
+
+.right-side-button a {
+    padding: 9px 20px;
+}
+
+.logo {}
+
+.footer-rights-grid {
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.footer-middle {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-grid-ele {}
+
+.footer-grid-ele ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-grid-ele li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.footer-middle-right {
+    width: 70%;
+    padding-top: 34px;
+}
+
+.fo-grid-head {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 31px;
+    color: white;
+}
+
+.footer-middle-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 284px;
+    padding-top: 34px;
+    color: white;
+}
+
+.footer-middle-left p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+.footer-left-top {}
+
+.footer-left-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.footer-left-bottom-top {}
+
+.footer-left-bottom-input {}
+
+.footer-left-bottom-des {}
+
+.footer-grid-last-top {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.footer-middle-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    color: white;
+    margin-top: -80px;
+    margin-bottom: 24px;
+    width: fit-content;
+}
+
+.footer-middle-bottom p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    padding: 12px 01px;
+
+}
+
+.footer-matchmaker {
+    border-bottom: 1px solid white;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 25px 0px;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.footer-end-left {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.footer-end-middle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+
+}
+
+.footer-end-right ul {
+    display: flex;
+    column-gap: 67px;
+}
+
+.footer-end-right li {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* Footer section end */
+
+@media(max-width: 1200px) {
+    .footer-rights-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .header-in-bottom {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header-in-top {
+        display: none;
+    }
+
+    .ham-active {
+        /* display: flex; */
+        visibility: visible;
+        /* height: 100%; */
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+    .hamburger {}
+}
+
+@media(max-width: 1024px) {
+    .banner-in {
+        flex-direction: column;
+    }
+
+    .banner-img-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        text-align: center;
+    }
+
+    .ban-text-middle {
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .ban-text-bottom {
+        text-align: center;
+    }
+
+    .banner-text a {
+        margin: 0 auto;
+    }
+
+    .banner-text {
+        gap: 60px;
+    }
+
+    .history-in {
+        flex-direction: column;
+    }
+
+    /* Footer section */
+    .footer-rights-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .footer-middle-bottom {
+        margin-top: 10px;
+    }
+
+
+    /* history section */
+    .history-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .history-text {
+        width: 100%;
+    }
+
+    .hi-text-top h2 {
+        max-width: 100%;
+    }
+
+    .hi-text-middle p {
+        max-width: 100%;
+    }
+
+    .history-in {
+        gap: 40px;
+    }
+
+    .his-img-sm {
+        top: -76px;
+        right: 40px;
+        left: auto;
+    }
+
+    /* our-commercial section */
+    .our-com-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .our-com-in {
+        justify-content: left;
+    }
+
+    .our-com-text {
+        width: 100%;
+    }
+
+    .our-com-text-middle p {
+        max-width: 100%;
+    }
+
+    /* science behind section */
+
+    .sc-be-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .sc-be-text {
+        width: 100%;
+    }
+
+    /* Resource section */
+    .resources-in {
+        flex-direction: column;
+    }
+
+    .resources-left h3 {
+        display: flex;
+    }
+
+    #tt-big-sc {
+        display: none;
+    }
+
+    #tt-slider {
+        display: block;
+    }
+
+    .tt-card-image {
+        height: auto;
+        aspect-ratio: 3/4;
+    }
+
+    .resources-img {
+        display: none;
+    }
+
+    .resources-img-mob {
+        display: flex;
+    }
+
+    .resources-left h3 {
+        font-size: 80px;
+    }
+    .feature-1-bottom{
+        gap: 70px;
+    }
+}
+
+@media(max-width: 767px) {
+    .banner-text h1 {
+        font-size: 42px;
+    }
+
+    .banner-text {
+        gap: 40px;
+    }
+
+
+    .Excellence_Guaranteed {
+        text-align: left;
+    }
+
+    .feature-1-top h2 {
+        text-align: left;
+    }
+
+    .feature-1-middle {
+        text-align: left;
+    }
+
+
+
+    .fo-grid-head {
+        font-size: 12px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-middle-right {
+        width: 100%;
+    }
+
+    .footer-middle-left {
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .his-img-sm {
+        right: 20px;
+        top: -50px;
+        width: 140px;
+    }
+
+    /* feedbackk section */
+    .feedback-content {
+        flex-direction: column;
+    }
+
+    .feedback-image {
+        margin-top: 28px;
+        height: 96px;
+        width: 96px;
+    }
+
+    .feedback-image img {
+        border-radius: 100px;
+    }
+
+    .feed-text-middle {
+        text-align: center;
+    }
+
+    .feedback-text {
+        width: 100%;
+    }
+
+    .feed-text-bottom {
+        text-align: center;
+    }
+
+    .feedback-image {
+        margin: 0 auto;
+    }
+
+    .feedback-text {
+        margin-bottom: 0;
+    }
+
+    .feed-arrows {
+        bottom: 45px;
+        left: 354px;
+    }
+
+    .re-img-mob-in {
+        width: 78px;
+    }
+
+    .resources-img-mob {
+        top: -50px;
+    }
+
+    .resources-left h3 {
+        font-size: 40px;
+    }
+
+    .spacer {
+        height: 100px;
+    }
+    .feature-1-bottom{
+        gap: 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer-rights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 60px;
+    }
+
+    .footer-middle-left {
+        flex-direction: column;
+        row-gap: 70px;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .his-img-sm {
+        right: 20px;
+        top: -35px;
+        width: 100px;
+    }
+
+    .resources-left h3 {
+        font-size: 28px;
+    }
+
+    .re-img-mob-in {
+        width: 58px;
+    }
+
+    .resources-img-mob {
+        top: -40px;
+    }
+
+
+    .feature-1-bottom{
+        gap: 30px;
+    }
+}

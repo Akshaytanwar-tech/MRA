@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-ExtraBold.woff2') format('woff2'),
+        url('TeodorTRIAL-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Bold.woff2') format('woff2'),
+        url('TeodorTRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-BoldItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-ExtraBoldItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Heavy.woff2') format('woff2'),
+        url('TeodorTRIAL-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-LightItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Medium.woff2') format('woff2'),
+        url('TeodorTRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Light.woff2') format('woff2'),
+        url('TeodorTRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-HeavyItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-ThinItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Thin.woff2') format('woff2'),
+        url('TeodorTRIAL-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Regular.woff2') format('woff2'),
+        url('TeodorTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-MediumItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-Regular.woff2') format('woff2'),
+        url('TeodorTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-RegularItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-SemiBold.woff2') format('woff2'),
+        url('TeodorTRIAL-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Teodor TRIAL';
+    src: url('TeodorTRIAL-SemiBoldItalic.woff2') format('woff2'),
+        url('TeodorTRIAL-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
