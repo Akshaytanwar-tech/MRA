@@ -133,6 +133,7 @@ ul, ol {
     transition: .3s ease all;
     border: 1px solid transparent;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .custom-button.white {
