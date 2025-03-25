@@ -335,10 +335,13 @@
 }
 
 .banner-text a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
     padding: 9px 20px;
     width: fit-content;
 }
@@ -357,7 +360,7 @@
 .ban-text-bottom {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 64px;
 }
 
 /* Banner section end */
@@ -821,6 +824,8 @@
 /* Our commercial section start */
 .our-commercial {
     position: relative;
+    background-image: url('/assets/img/Frame\ 427322600.png');
+    background-color: rgba(240, 236, 228, 1);
 }
 
 .our-com-in {
@@ -1678,6 +1683,10 @@
 }
 
 @media(max-width: 1024px) {
+    body {
+        background-color: rgba(240, 236, 228);
+    }
+
     .banner-in {
         flex-direction: column;
     }
@@ -1689,6 +1698,7 @@
 
     .banner-text {
         width: 100%;
+        padding: 65px 0px;
     }
 
     .banner-text h1 {
@@ -1766,8 +1776,15 @@
         justify-content: left;
     }
 
+    .our-commercial {
+        margin-top: 95px;
+        margin-bottom: 125px;
+
+    }
+
     .our-com-text {
         width: 100%;
+        padding: 56px 0;
     }
 
     .our-com-text-middle p {
@@ -1783,6 +1800,9 @@
 
     .sc-be-text {
         width: 100%;
+        gap: 38px;
+        padding-top: 62px;
+        padding-bottom: 90px;
     }
 
     /* Resource section */
@@ -1822,6 +1842,15 @@
     .feature-1-bottom {
         gap: 70px;
     }
+
+    .sc-be-text-top h2 {
+        margin-bottom: 0;
+    }
+
+    .Science-behind{
+        margin-top: 125px;
+        margin-bottom: 157px;
+    }
 }
 
 @media(max-width: 767px) {
@@ -1830,7 +1859,7 @@
     }
 
     .banner-text {
-        gap: 40px;
+        gap: 28px;
     }
 
 
@@ -1926,11 +1955,21 @@
     }
 
     .spacer {
-        height: 100px;
+        height: 0px;
     }
 
     .feature-1-bottom {
         gap: 50px;
+    }
+
+    .explore-in {
+        padding-top: 72px;
+        padding-bottom: 95px;
+    }
+
+    .avail-item {
+        padding-top: 56px;
+        padding-bottom: 56px;
     }
 }
 
