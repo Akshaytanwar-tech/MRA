@@ -1645,7 +1645,9 @@
 }
 
 /* Footer section end */
+@media(max-width:1300px){
 
+}
 @media(max-width: 1200px) {
     .footer-rights-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -1975,5 +1977,9 @@
 
     .feature-1-bottom{
         gap: 30px;
+    }
+    .feed-arrows {
+        bottom: 45px;
+        left: 230px;
     }
 }
