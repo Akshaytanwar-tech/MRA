@@ -881,6 +881,14 @@
     object-fit: cover;
 }
 
+.our-com-img-in {
+    position: absolute;
+    top: 39%;
+    right: -40px;
+}
+
+.our-com-img-in img {}
+
 .our-com-text {
     padding: 150px 0px;
     width: 40%;
@@ -1851,6 +1859,7 @@
         padding: 0;
     }
 
+
 }
 
 @media(max-width: 1024px) {
@@ -2077,6 +2086,12 @@
 
     .tt-text-content {
         gap: 10px;
+    }
+
+    .our-com-img-in {
+        top: -17px;
+        right: 2%;
+        width: 146px;
     }
 }
 
