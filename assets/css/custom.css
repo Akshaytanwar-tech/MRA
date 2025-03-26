@@ -726,7 +726,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
     text-transform: capitalize;
     color: rgba(208, 222, 255, 1);
 }
@@ -1162,7 +1162,7 @@
 
 .ti-tr-head p {
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
     text-transform: capitalize;
 }
 
@@ -1542,16 +1542,21 @@
 .fot-right-side {
     display: flex;
     gap: 12px;
+
     align-items: center;
 }
 
-.fot-right-side {}
+
 
 .right-side-button a {
     padding: 9px 20px;
 }
 
 .logo {}
+
+.logo-mob {
+    display: none;
+}
 
 .footer-rights-grid {
 
@@ -1611,6 +1616,7 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0px;
+    max-width: 51ch;
 }
 
 .footer-left-top {}
@@ -1649,10 +1655,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
     text-transform: capitalize;
     padding: 12px 01px;
-
+    display: flex;
+    align-items: center;
 }
 
 .footer-matchmaker {
@@ -1672,11 +1679,25 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
 
 }
 
 .footer-end-middle {
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+
+}
+
+.footer-end-middle-mob {
+    display: none;
+    column-gap: 28px;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -1686,14 +1707,25 @@
 
 .footer-end-right ul {
     display: flex;
-    column-gap: 67px;
+    justify-content: space-between;
+}
+
+.footer-end-right {
+    flex: 1;
+    padding-left: 120px;
 }
 
 .footer-end-right li {
     font-weight: 300;
     font-size: 12px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
+}
+
+
+.fot-end-logos {
+    display: flex;
+    column-gap: 24px;
 }
 
 /* Footer section end */
@@ -1714,6 +1746,8 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
+
 
     .header-in-bottom {
         display: none;
@@ -1737,6 +1771,17 @@
     }
 
     .hamburger {}
+
+    .footer-end {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-end-right {
+        width: 100%;
+        padding: 0;
+    }
+
 }
 
 @media(max-width: 1024px) {
@@ -1958,6 +2003,8 @@
     .he-in-top-left {
         gap: 0;
     }
+
+
 }
 
 @media(max-width: 767px) {
@@ -1996,20 +2043,7 @@
         font-size: 12px;
     }
 
-    .footer-middle {
-        flex-direction: column;
-    }
 
-    .footer-middle-right {
-        width: 100%;
-    }
-
-    .footer-middle-left {
-        width: 100%;
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-between;
-    }
 
     .his-img-sm {
         right: 20px;
@@ -2107,9 +2141,74 @@
         font-size: 28px;
     }
 
+    /* // footer section */
+
     .footer-top {
         flex-direction: column;
         row-gap: 20px;
+    }
+
+    .fot-right-side {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-end {
+        flex-direction: column-reverse;
+        border-top: none;
+    }
+
+    .footer-end-right ul {
+
+        justify-content: space-between;
+    }
+
+    .footer-end-middle-mob {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .footer-end-middle {
+        display: none;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-middle-right {
+        width: 100%;
+    }
+
+    .footer-middle-left {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .logo-mob {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .footer-middle-right {
+        border-bottom: 1px solid white;
+    }
+
+    .footer-left-bottom {
+        padding-top: 50px;
+    }
+
+    .footer-end-right {
+        padding-top: 50px;
+    }
+
+    .footer-end-left {
+        padding-top: 50px;
     }
 }
 
@@ -2121,15 +2220,7 @@
         column-gap: 60px;
     }
 
-    .footer-middle-left {
-        flex-direction: column;
-        row-gap: 70px;
-    }
 
-    .footer-end {
-        flex-direction: column;
-        row-gap: 20px;
-    }
 
 
     .hamburger .line {
@@ -2165,7 +2256,5 @@
         left: 50%;
     }
 
-    .footer-end-right ul {
-        column-gap: 10px;
-    }
+
 }
