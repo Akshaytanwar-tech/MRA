@@ -1246,7 +1246,7 @@
 
 .tt-card:hover .tt-card-in:not(:hover) .tt-text-content {}
 
-.tt-text-content h2 {
+.tt-text-content h3 {
     font-size: 20px;
     margin-bottom: 5px;
     font-size: 26.1px;
@@ -2123,6 +2123,10 @@
 
     .spacer {
         height: 0px;
+    }
+
+    .tips-tricks-in {
+        padding: 175px 0px;
     }
 
     /* feature section */
