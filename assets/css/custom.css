@@ -1222,7 +1222,7 @@
     flex-direction: column;
     gap: 22px;
     justify-content: flex-end;
-    bottom: 0;
+    bottom: 20px;
     /* transition: top 0.3s ease-in-out; */
 }
 
@@ -1247,6 +1247,7 @@
 .tt-card:hover .tt-card-in:not(:hover) .tt-text-content {}
 
 .tt-text-content h3 {
+    font-family: "Teodor TRIAL";
     font-size: 20px;
     margin-bottom: 5px;
     font-size: 26.1px;
@@ -1260,10 +1261,9 @@
     font-size: 14px;
     font-weight: 400;
     font-size: 16px;
-
     line-height: 140%;
     letter-spacing: 0px;
-
+    max-width: 30ch;
 }
 
 .tt-text-content a {
@@ -1393,8 +1393,8 @@
     column-gap: 20px;
     width: fit-content;
     position: absolute;
-    bottom: 20px;
-    left: 78px;
+    bottom: 7%;
+    left: 19%;
 }
 
 .features-card-in {
