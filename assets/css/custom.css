@@ -350,6 +350,17 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.ban-text-top p {
+    font-weight: 400;
+    font-size: 35.1px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(204, 146, 47, 1);
+    display: none;
+}
+
 .ban-text-middle {
     display: flex;
     flex-direction: column;
@@ -546,7 +557,7 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .explore-in h2 {}
@@ -721,11 +732,9 @@
 }
 
 .avl-itm-top-top h2 {
-    font-family: "Teodor TRIAL";
-    font-weight: 400;
-    font-size: 52px;
+
     line-height: 100%;
-    letter-spacing: -4%;
+    letter-spacing: 0.64px;
 
 }
 
@@ -864,9 +873,7 @@
 }
 
 .our-com-text-top h2 {
-    font-family: "Teodor TRIAL";
-    font-weight: 400;
-    font-size: 52px;
+
     line-height: 105%;
     letter-spacing: -0.16px;
     text-transform: capitalize;
@@ -1904,6 +1911,7 @@
 
     .map-top {
         flex-direction: column;
+        gap: 36px;
     }
 
     .map-top-left {
@@ -1942,9 +1950,18 @@
         top: auto;
         right: auto;
     }
+
+    .ban-text-top p {
+        display: block;
+    }
 }
 
 @media(max-width: 767px) {
+    h2 {
+        font-size: 28px;
+        letter-spacing: -0.16px;
+    }
+
     .banner-text h1 {
         font-size: 42px;
     }
@@ -1960,13 +1977,16 @@
 
     .feature-1-top h2 {
         text-align: left;
+        font-size: 28px;
     }
 
     .feature-1-middle {
         text-align: left;
     }
 
-
+    .feature-1-in {
+        gap: 40px;
+    }
 
     .fo-grid-head {
         font-size: 12px;
@@ -2010,6 +2030,7 @@
 
     .feed-text-middle {
         text-align: center;
+        font-size: 24px;
     }
 
     .feedback-text {
@@ -2051,6 +2072,21 @@
 
     .feature-1-bottom {
         gap: 50px;
+        padding-top: 0;
+    }
+
+    .history-text {
+        gap: 40px;
+    }
+
+    .ex-top-top h2 {
+        font-size: 28px;
+        letter-spacing: -0.16px;
+    }
+
+    .hi-text-top h2 {
+        font-size: 28px;
+        line-height: -0.16px;
     }
 
     .explore-in {
@@ -2061,6 +2097,10 @@
     .avail-item {
         padding-top: 56px;
         padding-bottom: 56px;
+    }
+
+    .sc-be-text-top h2 {
+        font-size: 28px;
     }
 }
 
