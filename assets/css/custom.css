@@ -1389,7 +1389,7 @@
 }
 
 .features-cards {
-    display: flex;
+    display: none;
     column-gap: 20px;
     width: fit-content;
     position: absolute;
@@ -1594,7 +1594,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     padding-bottom: 31px;
-    color: white;
+    color: rgba(163, 163, 163, 1);
 }
 
 .footer-middle-left {
@@ -1954,6 +1954,10 @@
     .ban-text-top p {
         display: block;
     }
+
+    .he-in-top-left {
+        gap: 0;
+    }
 }
 
 @media(max-width: 767px) {
@@ -2102,6 +2106,11 @@
     .sc-be-text-top h2 {
         font-size: 28px;
     }
+
+    .footer-top {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 
@@ -2122,9 +2131,10 @@
         row-gap: 20px;
     }
 
-    .footer-top {
-        flex-direction: column;
-        row-gap: 20px;
+
+    .hamburger .line {
+        width: 30px;
+        margin: 5px auto;
     }
 
     .his-img-sm {
@@ -2153,5 +2163,9 @@
     .feed-arrows {
         bottom: 45px;
         left: 50%;
+    }
+
+    .footer-end-right ul {
+        column-gap: 10px;
     }
 }
