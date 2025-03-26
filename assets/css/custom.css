@@ -193,8 +193,8 @@
 /* Hamburger animation start*/
 
 .hamburger .line {
-    width: 50px;
-    height: 5px;
+    width: 40px;
+    height: 4px;
     background-color: #ecf0f1;
     display: block;
     margin: 8px auto;
@@ -256,7 +256,7 @@
 .hamburger-nav-links a {
     color: white;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     padding: 10px 20px;
 }
