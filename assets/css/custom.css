@@ -72,6 +72,20 @@
 
 .nav-link {
     line-height: 100%;
+    position: relative;
+}
+
+.nav-link:hover .below-line {
+    width: 98%;
+}
+
+.below-line {
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 25px;
+    background: white;
+    transition: 0.3s width ease-in-out;
 }
 
 .nav-link a {
@@ -1575,6 +1589,10 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
+.footer-rights-grid li {
+    cursor: pointer;
+}
+
 .footer-middle {
     display: flex;
     gap: 40px;
@@ -1595,6 +1613,11 @@
     letter-spacing: 0px;
     text-transform: capitalize;
     color: white;
+    position: relative;
+}
+
+.footer-grid-ele li:hover .fo-bot-line{
+    width: 80%;
 }
 
 .footer-middle-right {
@@ -1736,6 +1759,15 @@
 .fot-end-logos {
     display: flex;
     column-gap: 24px;
+}
+
+.fo-bot-line{
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 25px;
+    background: white;
+    transition: 0.3s width ease-in-out;
 }
 
 /* Footer section end */
