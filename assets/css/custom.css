@@ -2092,6 +2092,8 @@
         left: 50%;
     }
 
+
+    /* Resources section */
     .re-img-mob-in {
         width: 78px;
     }
@@ -2104,10 +2106,15 @@
         font-size: 40px;
     }
 
+    .resources-in {
+        margin-bottom: 120px;
+    }
+
     .spacer {
         height: 0px;
     }
 
+    /* feature section */
     .feature-1-bottom {
         gap: 50px;
         padding-top: 0;
