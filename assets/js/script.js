@@ -11,27 +11,27 @@ splide.mount();
 let popup = document.getElementById("searchPopup");
 let overlay = document.getElementById("searchPopupOverlay");
 let searchContainer = document.getElementById("search-cont");
-function openSearchPopup() {
-  overlay.style.display = "block";
-  searchContainer.style.height = "100vh";
-  setTimeout(() => {
-    popup.classList.add("active");
-  }, 10);
-  document.body.style.overflow = "hidden";
-}
-function closeSearchPopup() {
-  searchContainer.style.height = "0";
-  popup.classList.remove("active");
-  setTimeout(() => {
-    document.getElementById("searchPopupOverlay").style.display = "none";
-    document.body.style.overflow = "auto";
-  }, 400);
-}
+// function openSearchPopup() {
+//   overlay.style.display = "block";
+//   searchContainer.style.height = "100vh";
+//   setTimeout(() => {
+//     popup.classList.add("active");
+//   }, 10);
+//   document.body.style.overflow = "hidden";
+// }
+// function closeSearchPopup() {
+//   searchContainer.style.height = "0";
+//   popup.classList.remove("active");
+//   setTimeout(() => {
+//     document.getElementById("searchPopupOverlay").style.display = "none";
+//     document.body.style.overflow = "auto";
+//   }, 400);
+// }
 
 // hamburger animation
 
 $(document).ready(function () {
-  $(".he-in-top-right").click(function (e) {
+  $(".hamburger-button").click(function (e) {
     e.stopPropagation();
     $(this).toggleClass("is-active");
     $(".hamburger-in").toggleClass("ham-active");
