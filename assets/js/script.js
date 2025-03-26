@@ -12,8 +12,10 @@ let popup = document.getElementById("searchPopup");
 let overlay = document.getElementById("searchPopupOverlay");
 let searchContainer = document.getElementById("search-cont");
 // function openSearchPopup() {
+
 //   overlay.style.display = "block";
 //   searchContainer.style.height = "100vh";
+
 //   setTimeout(() => {
 //     popup.classList.add("active");
 //   }, 10);
