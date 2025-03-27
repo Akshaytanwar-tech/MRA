@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     color: white;
+    gap: 10px;
 }
 
 .he-top-left-item a {
@@ -1168,7 +1169,8 @@
 
 .feedback-image {
     margin-top: 28px;
-
+    width: 40%;
+    height: auto;
 }
 
 .feedback-image img {
@@ -1176,6 +1178,21 @@
     height: 100%;
     object-fit: cover;
 
+}
+
+.feedback-image-mob {
+    /* margin-top: 28px; */
+    display: none;
+    height: 48px;
+    width: 48px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 16px;
+}
+.feedback-image-mob img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
 }
 
 /* Feedback section end */
@@ -1265,7 +1282,7 @@
 
 .tt-text-content {
     position: absolute;
-    padding: 0px 50px;
+    padding: 0px 21px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1759,7 +1776,7 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0px;
-
+    margin: 0 60px;
 }
 
 .footer-end-middle-mob {
@@ -1780,7 +1797,7 @@
 
 .footer-end-right {
     flex: 1;
-    padding-left: 120px;
+    /* padding-left: 120px; */
 }
 
 .footer-end-right li {
@@ -1852,6 +1869,7 @@
     .footer-end {
         flex-direction: column;
         row-gap: 20px;
+        padding-bottom: 60px;
     }
 
     .footer-end-right {
@@ -2145,18 +2163,31 @@
     }
 
     .feedback-image {
-        margin-top: 28px;
+        /* margin-top: 28px;
         height: 96px;
-        width: 96px;
+        width: 96px; */
+        display: none;
+        
     }
 
     .feedback-image img {
-        border-radius: 100px;
+        /* border-radius: 100px; */
+    }
+
+    .feedback-image {
+        /* margin: 0 auto; */
+    }
+    .feedback-image-mob{
+        display: block;
+    }
+    .feedback-text{
+        gap: 0;
     }
 
     .feed-text-middle {
         text-align: center;
         font-size: 24px;
+        padding-top: 80px;
     }
 
     .feedback-text {
@@ -2167,9 +2198,7 @@
         text-align: center;
     }
 
-    .feedback-image {
-        margin: 0 auto;
-    }
+
 
     .feedback-text {
         margin-bottom: 0;
